@@ -14,7 +14,6 @@ private:
 public:
     Product(std::string titre, std::string description, int quantite, double prix);
 
-    // getters
     std::string getTitre() const;
     std::string getDescription() const; 
     int getQuantite() const;

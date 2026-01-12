@@ -65,9 +65,10 @@ void Magasin::afficherClients() const
 Client* Magasin::trouverClientParId(int id)
 {
 	for (auto& client : clients_) {
-		if (client.getId() == id)
+		if (client.getId() == id) {
 			std::cout << client << std::endl;
 			return &client;
+		}
 	}
 	return nullptr;
 }
@@ -81,4 +82,15 @@ Client* Magasin::trouverClientParNom(std::string nom)
 		}
 	}
 	return nullptr;
+}
+
+void Magasin::ajouterProduitPanier(int idClient, const Product& produit)
+{
+	Client* client = trouverClientParId(idClient);
+	if (client) {
+		client->ajouterPanier(produit);
+	}
+	else {
+		std::cout << "Client avec ID " << idClient << " non trouvé." << std::endl;
+	}
 }

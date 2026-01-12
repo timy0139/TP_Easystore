@@ -48,6 +48,7 @@ int main() {
 	easyStore.afficherClients();
 	easyStore.trouverClientParNom("Millet");
 	easyStore.trouverClientParId(2);
-
+	easyStore.ajouterProduitPanier(2, ps4);
+	easyStore.trouverClientParId(2);
 	return 0;
 }
