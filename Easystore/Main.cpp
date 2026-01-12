@@ -33,6 +33,8 @@ int main() {
 	client2.ajouterPanier(xbox);
 	client1.modifierQuantitePanier("PS4", 2);
 	client1.modifierQuantitePanier("xbox", 2);
+	client1.supprimerDuPanier("PS4");
+	client1.supprimerDuPanier("nintendo");
 
 	client1.viderPanier();
 	return 0;

@@ -21,4 +21,6 @@ public:
     void viderPanier();
 
     void modifierQuantitePanier(const std::string& nom, int nouvelleQuantite);
+
+    void supprimerDuPanier(const std::string& nom);
 };

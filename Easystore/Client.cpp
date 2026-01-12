@@ -46,3 +46,15 @@ void Client::modifierQuantitePanier(const std::string& nom, int nouvelleQuantite
     std::cout << "Produit '" << nom << "' non trouvé dans le panier." << std::endl;
 
 }
+
+void Client::supprimerDuPanier(const std::string& nom)
+{
+    for (auto indice = panier_.begin(); indice != panier_.end(); ++indice) {
+        if (indice->getTitre() == nom) {
+            panier_.erase(indice);
+            return;
+        }
+    }
+    std::cout << "Produit '" << nom << "' non trouvé dans le panier." << std::endl;
+
+}
