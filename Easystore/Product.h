@@ -22,4 +22,5 @@ public:
 
     void setQuantite(int quantity);
 
+    friend std::ostream& operator<<(std::ostream& os, const Product& p);
 };

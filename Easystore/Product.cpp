@@ -29,3 +29,12 @@ void Product::setQuantite(int quantity)
 {
     quantite_ = quantity;
 }
+
+std::ostream& operator<<(std::ostream& os, const Product& p)
+{
+    os << "Produit : " << p.getTitre()
+        << " | Description : " << p.getDescription()
+        << " | Quantité : " << p.getQuantite()
+        << " | Prix : " << p.getPrix() << " €";
+    return os;
+}
