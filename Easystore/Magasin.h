@@ -19,4 +19,6 @@ public:
     Magasin();
 
     const std::vector<Product>& getProducts() const;
+
+    void addProduct(const Product& product);
 };
