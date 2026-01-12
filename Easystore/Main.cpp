@@ -1,7 +1,7 @@
 #include <iostream>
-
+#include "Magasin.h"
 
 int main() {
-	std::cout << "hello";
+	Magasin easyStore;
 	return 0;
 }
