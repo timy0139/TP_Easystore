@@ -19,4 +19,12 @@ public:
     Magasin();
 
     const std::vector<Product>& getProducts() const;
+
+    void addProduct(const Product& product);
+
+    void afficherProduct() const;
+
+    void afficherProduitParNom(const std::string& nom) const;
+
+    void modifierQuantiterProduit(const std::string& nom, int nouvelleQuantite);
 };
