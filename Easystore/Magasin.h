@@ -21,4 +21,6 @@ public:
     const std::vector<Product>& getProducts() const;
 
     void addProduct(const Product& product);
+
+    void afficherProduct() const;
 };

@@ -16,5 +16,7 @@ int main() {
 	easyStore.addProduct(xbox);
 	std::cout << "2 produits ajoutés au magasin." << std::endl;
 	std::cout << "Nombre de produits: " << easyStore.getProducts().size() << std::endl;
+	easyStore.afficherProduct();
+	
 	return 0;
 }

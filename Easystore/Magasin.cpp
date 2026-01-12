@@ -13,3 +13,10 @@ void Magasin::addProduct(const Product& product)
 {
 	products_.push_back(product);
 }
+
+void Magasin::afficherProduct() const
+{
+	for (const auto& produit : products_) {
+		std::cout << produit << std::endl;
+	}
+}
