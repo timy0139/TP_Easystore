@@ -3,17 +3,20 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Product.h"
 
-class Produit;
+class Product;
 class Client;
 class Commande;
 
 class Magasin {
 private:
-    //std::vector<Produit> _products;
-    //std::vector<Client> _clients;
-    //std::vector<Commande> _orders;
+    std::vector<Product> products_;
+    //std::vector<Client> clients_;
+    //std::vector<Commande> orders_;
 
 public:
     Magasin();
+
+    const std::vector<Product>& getProducts() const;
 };
