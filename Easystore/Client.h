@@ -18,4 +18,6 @@ public:
 
     void ajouterPanier(const Product& produit);
 
+    void viderPanier();
+
 };

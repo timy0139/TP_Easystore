@@ -29,3 +29,8 @@ void Client::ajouterPanier(const Product& produit)
 {
     panier_.push_back(produit);
 }
+
+void Client::viderPanier()
+{
+    panier_.clear();
+}
