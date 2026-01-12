@@ -23,4 +23,6 @@ public:
     void modifierQuantitePanier(const std::string& nom, int nouvelleQuantite);
 
     void supprimerDuPanier(const std::string& nom);
+
+    friend std::ostream& operator<<(std::ostream& os, const Client& client);
 };

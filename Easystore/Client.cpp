@@ -58,3 +58,19 @@ void Client::supprimerDuPanier(const std::string& nom)
     std::cout << "Produit '" << nom << "' non trouvé dans le panier." << std::endl;
 
 }
+
+std::ostream& operator<<(std::ostream& os, const Client& client)
+{
+    os << "Client #" << client.getId()
+        << " : " << client.getPrenom()
+        << " " << client.getNom() << "\nPanier :\n";
+    if (client.panier_.empty()) {
+        os << "panier vide";
+    }
+    else {
+        for (const auto& p : client.getPanier()) {
+            os << "  - " << p << std::endl;
+        }
+        return os;
+    }
+}

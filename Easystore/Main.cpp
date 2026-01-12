@@ -30,12 +30,16 @@ int main() {
 	Client client1(1, "Dominique", "Ginhac");
 	Client client2(2, "Thomas", "Millet");
 	client1.ajouterPanier(ps4);
+	client1.ajouterPanier(xbox);
 	client2.ajouterPanier(xbox);
+	std::cout << client1 << "\n" << std::endl;
 	client1.modifierQuantitePanier("PS4", 2);
 	client1.modifierQuantitePanier("xbox", 2);
+	std::cout << client1 << "\n" << std::endl;
 	client1.supprimerDuPanier("PS4");
 	client1.supprimerDuPanier("nintendo");
-
+	std::cout << client1 << "\n" << std::endl;
 	client1.viderPanier();
+	std::cout << client1 << "\n" << std::endl;
 	return 0;
 }
