@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Magasin.h"
+#include "client.h"
 
 int main() {
 	Magasin easyStore;
@@ -11,7 +12,7 @@ int main() {
 	ps4.setQuantite(8);
 	std::cout << "Quantité PS4 après: " << ps4.getQuantite() << std::endl;
 
-//question 3
+	//question 3
 	easyStore.addProduct(ps4);
 	easyStore.addProduct(xbox);
 	std::cout << "2 produits ajoutés au magasin." << std::endl;
@@ -25,5 +26,20 @@ int main() {
 	easyStore.afficherProduitParNom("PS4");
 	easyStore.modifierQuantiterProduit("Nintendo", 5);
 
+	//question 4
+	Client client1(1, "Dominique", "Ginhac");
+	Client client2(2, "Thomas", "Millet");
+	client1.ajouterPanier(ps4);
+	client1.ajouterPanier(xbox);
+	client2.ajouterPanier(xbox);
+	std::cout << client1 << "\n" << std::endl;
+	client1.modifierQuantitePanier("PS4", 2);
+	client1.modifierQuantitePanier("xbox", 2);
+	std::cout << client1 << "\n" << std::endl;
+	client1.supprimerDuPanier("PS4");
+	client1.supprimerDuPanier("nintendo");
+	std::cout << client1 << "\n" << std::endl;
+	client1.viderPanier();
+	std::cout << client1 << "\n" << std::endl;
 	return 0;
 }

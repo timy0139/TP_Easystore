@@ -9,6 +9,11 @@ const std::vector<Product>& Magasin::getProducts() const
 	return products_;
 }
 
+const std::vector<Client>& Magasin::getClient() const
+{
+	return clients_;
+}
+
 void Magasin::addProduct(const Product& product)
 {
 	products_.push_back(product);
