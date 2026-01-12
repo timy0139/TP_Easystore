@@ -29,5 +29,7 @@ int main() {
 	//question 4
 	Client client1(1, "Dominique", "Ginhac");
 	Client client2(2, "Thomas", "Millet");
+	client1.ajouterPanier(ps4);
+	client2.ajouterPanier(xbox);
 	return 0;
 }

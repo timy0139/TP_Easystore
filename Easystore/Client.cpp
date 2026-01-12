@@ -24,3 +24,8 @@ const std::vector<Product>& Client::getPanier() const
 {
     return panier_;
 }
+
+void Client::ajouterPanier(const Product& produit)
+{
+    panier_.push_back(produit);
+}

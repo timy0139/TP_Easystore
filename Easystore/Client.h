@@ -16,4 +16,6 @@ public:
     std::string getPrenom() const;
     const std::vector<Product>& getPanier() const;
 
+    void ajouterPanier(const Product& produit);
+
 };
