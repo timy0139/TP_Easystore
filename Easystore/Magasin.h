@@ -23,4 +23,6 @@ public:
     void addProduct(const Product& product);
 
     void afficherProduct() const;
+
+    void afficherProduitParNom(const std::string& nom) const;
 };

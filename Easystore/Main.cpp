@@ -17,6 +17,8 @@ int main() {
 	std::cout << "2 produits ajoutés au magasin." << std::endl;
 	std::cout << "Nombre de produits: " << easyStore.getProducts().size() << std::endl;
 	easyStore.afficherProduct();
-	
+
+	easyStore.afficherProduitParNom("Xbox");
+	easyStore.afficherProduitParNom("PlayStation 5");
 	return 0;
 }

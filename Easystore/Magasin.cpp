@@ -20,3 +20,14 @@ void Magasin::afficherProduct() const
 		std::cout << produit << std::endl;
 	}
 }
+
+void Magasin::afficherProduitParNom(const std::string& nom) const
+{
+	for (const auto& produit : products_) {
+		if (produit.getTitre() == nom) {
+			std::cout << produit << std::endl;
+			return;
+		}
+	}
+	std::cout << "Produit '" << nom << "' non trouvé." << std::endl;
+}
