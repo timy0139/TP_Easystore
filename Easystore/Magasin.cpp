@@ -62,22 +62,23 @@ void Magasin::afficherClients() const
 	}
 }
 
-void Magasin::afficherClientParNom(const std::string nom) const
+Client* Magasin::trouverClientParId(int id)
 {
-	for (const auto& client : clients_) {
-		if (client.getNom() == nom) {
+	for (auto& client : clients_) {
+		if (client.getId() == id)
 			std::cout << client << std::endl;
-			return;
-		}
+			return &client;
 	}
-	std::cout << "Client avec nom" << nom << "non trouvé" << std::endl;
+	return nullptr;
 }
 
-void Magasin::afficherClientParId(int id) const
+Client* Magasin::trouverClientParNom(std::string nom)
 {
-	for (const auto& client : clients_) {
-		if (client.getId() == id) {
+	for (auto& client : clients_) {
+		if (client.getNom() == nom) {
 			std::cout << client << std::endl;
+			return &client;
 		}
 	}
+	return nullptr;
 }

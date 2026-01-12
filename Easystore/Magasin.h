@@ -34,6 +34,8 @@ public:
 
     void afficherClients() const;
 
-    void afficherClientParNom(const std::string nom) const;
-    void afficherClientParId(int id) const;
+    Client* trouverClientParId(int id);
+    Client* trouverClientParNom(std::string nom);
+
+
 };
