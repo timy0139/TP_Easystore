@@ -54,3 +54,10 @@ void Magasin::ajouterClient(const Client& client)
 {
 	clients_.push_back(client);
 }
+
+void Magasin::afficherClients() const
+{
+	for (const auto& client : clients_) {
+		std::cout << client << std::endl;
+	}
+}

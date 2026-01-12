@@ -31,4 +31,6 @@ public:
     void modifierQuantiterProduit(const std::string& nom, int nouvelleQuantite);
 
     void ajouterClient(const Client& c);
+
+    void afficherClients() const;
 };

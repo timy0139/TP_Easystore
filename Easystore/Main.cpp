@@ -45,6 +45,7 @@ int main() {
 	//question 5
 	easyStore.ajouterClient(client1);
 	easyStore.ajouterClient(client2);
+	easyStore.afficherClients();
 
 	return 0;
 }
