@@ -41,5 +41,10 @@ int main() {
 	std::cout << client1 << "\n" << std::endl;
 	client1.viderPanier();
 	std::cout << client1 << "\n" << std::endl;
+
+	//question 5
+	easyStore.ajouterClient(client1);
+	easyStore.ajouterClient(client2);
+
 	return 0;
 }

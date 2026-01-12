@@ -29,4 +29,6 @@ public:
     void afficherProduitParNom(const std::string& nom) const;
 
     void modifierQuantiterProduit(const std::string& nom, int nouvelleQuantite);
+
+    void ajouterClient(const Client& c);
 };

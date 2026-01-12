@@ -49,3 +49,8 @@ void Magasin::modifierQuantiterProduit(const std::string& nom, int nouvelleQuant
 	}
 	std::cout << "Produit '" << nom << "' non trouvé." << std::endl;
 }
+
+void Magasin::ajouterClient(const Client& client)
+{
+	clients_.push_back(client);
+}
