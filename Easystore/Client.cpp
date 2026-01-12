@@ -34,3 +34,15 @@ void Client::viderPanier()
 {
     panier_.clear();
 }
+
+void Client::modifierQuantitePanier(const std::string& nom, int nouvelleQuantite)
+{
+    for (auto& p : panier_) {
+        if (p.getTitre() == nom) {
+            p.setQuantite(nouvelleQuantite);
+            return;
+        }
+    }
+    std::cout << "Produit '" << nom << "' non trouvé dans le panier." << std::endl;
+
+}
