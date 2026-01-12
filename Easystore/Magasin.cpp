@@ -31,3 +31,16 @@ void Magasin::afficherProduitParNom(const std::string& nom) const
 	}
 	std::cout << "Produit '" << nom << "' non trouvé." << std::endl;
 }
+
+void Magasin::modifierQuantiterProduit(const std::string& nom, int nouvelleQuantite)
+{
+	for (auto& product : products_) {
+		if (product.getTitre() == nom) {
+			product.setQuantite(nouvelleQuantite);
+			std::cout << "Quantité de '" << nom << "' mise à jour: "
+				<< nouvelleQuantite << std::endl;
+			return;
+		}
+	}
+	std::cout << "Produit '" << nom << "' non trouvé." << std::endl;
+}

@@ -20,5 +20,10 @@ int main() {
 
 	easyStore.afficherProduitParNom("Xbox");
 	easyStore.afficherProduitParNom("PlayStation 5");
+
+	easyStore.modifierQuantiterProduit("Xbox", 20);
+	easyStore.afficherProduitParNom("PS4");
+	easyStore.modifierQuantiterProduit("Nintendo", 5);
+
 	return 0;
 }
