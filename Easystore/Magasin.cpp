@@ -61,3 +61,23 @@ void Magasin::afficherClients() const
 		std::cout << client << std::endl;
 	}
 }
+
+void Magasin::afficherClientParNom(const std::string nom) const
+{
+	for (const auto& client : clients_) {
+		if (client.getNom() == nom) {
+			std::cout << client << std::endl;
+			return;
+		}
+	}
+	std::cout << "Client avec nom" << nom << "non trouvé" << std::endl;
+}
+
+void Magasin::afficherClientParId(int id) const
+{
+	for (const auto& client : clients_) {
+		if (client.getId() == id) {
+			std::cout << client << std::endl;
+		}
+	}
+}

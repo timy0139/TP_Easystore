@@ -46,6 +46,8 @@ int main() {
 	easyStore.ajouterClient(client1);
 	easyStore.ajouterClient(client2);
 	easyStore.afficherClients();
+	easyStore.afficherClientParNom("Millet");
+	easyStore.afficherClientParId(2);
 
 	return 0;
 }

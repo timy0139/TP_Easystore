@@ -33,4 +33,7 @@ public:
     void ajouterClient(const Client& c);
 
     void afficherClients() const;
+
+    void afficherClientParNom(const std::string nom) const;
+    void afficherClientParId(int id) const;
 };
