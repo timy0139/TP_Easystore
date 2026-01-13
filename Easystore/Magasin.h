@@ -39,4 +39,6 @@ public:
 
     void ajouterProduitPanier(int idClient, const Product& produit);
     void supprimerProduitPanier(int idClient, const std::string& produit);
+    void modifierQuantiterProduitPanier(int idClient, const std::string& nom, int nouvellequantite);
+        
 };

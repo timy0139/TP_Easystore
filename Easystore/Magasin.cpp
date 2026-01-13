@@ -105,3 +105,14 @@ void Magasin::supprimerProduitPanier(int idClient, const std::string& produit)
 		std::cout << "Client avec ID" << idClient << "non trouvé. " << std::endl;
 	}
 }
+
+void Magasin::modifierQuantiterProduitPanier(int idClient, const std::string& nom, int nouvellequantite)
+{
+	Client* client = trouverClientParId(idClient);
+	if (client) {
+		client->modifierQuantitePanier(nom, nouvellequantite);
+	}
+	else {
+		std::cout << "Client avec ID" << idClient << "nom trouvé" << std::endl;
+	}
+}
