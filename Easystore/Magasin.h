@@ -37,5 +37,6 @@ public:
     Client* trouverClientParId(int id);
     Client* trouverClientParNom(std::string nom);
 
-    void ajouterProduitPanier(int idClient, const Product& p);
+    void ajouterProduitPanier(int idClient, const Product& produit);
+    void supprimerProduitPanier(int idClient, const std::string& produit);
 };

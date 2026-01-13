@@ -50,5 +50,7 @@ int main() {
 	easyStore.trouverClientParId(2);
 	easyStore.ajouterProduitPanier(2, ps4);
 	easyStore.trouverClientParId(2);
+	easyStore.supprimerProduitPanier(2, "Xbox");
+	easyStore.trouverClientParId(2);
 	return 0;
 }

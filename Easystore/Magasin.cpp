@@ -94,3 +94,14 @@ void Magasin::ajouterProduitPanier(int idClient, const Product& produit)
 		std::cout << "Client avec ID " << idClient << " non trouvé." << std::endl;
 	}
 }
+
+void Magasin::supprimerProduitPanier(int idClient, const std::string& produit)
+{
+	Client* client = trouverClientParId(idClient);
+	if (client) {
+		client->supprimerDuPanier(produit);
+	}
+	else {
+		std::cout << "Client avec ID" << idClient << "non trouvé. " << std::endl;
+	}
+}
