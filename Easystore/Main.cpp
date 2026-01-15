@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Magasin.h"
-#include "client.h"
 
 int main() {
 	Magasin easyStore;
@@ -54,5 +53,8 @@ int main() {
 	easyStore.trouverClientParId(2);
 	easyStore.modifierQuantiterProduitPanier(2, "PS4", 7);
 	easyStore.trouverClientParId(2);
-	return 0;
+
+	//question 6
+	Commande commande1(1, client1, client1.getPanier(), false);
+	std::cout << commande1 << std::endl;
 }

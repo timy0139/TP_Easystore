@@ -14,6 +14,11 @@ const std::vector<Client>& Magasin::getClient() const
 	return clients_;
 }
 
+const std::vector<Commande>& Magasin::getCommande() const
+{
+	return commande_;
+}
+
 void Magasin::addProduct(const Product& product)
 {
 	products_.push_back(product);
