@@ -44,4 +44,5 @@ public:
     void modifierQuantiterProduitPanier(int idClient, const std::string& nom, int nouvellequantite);
 
     void validerCommande(int idClient, int idCommande);
+    void statusCommande(int idCommande);
 };

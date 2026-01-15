@@ -134,3 +134,13 @@ void Magasin::validerCommande(int idClient, int idCommande)
 		std::cout << "Client avec ID" << idClient << "nom trouvé" << std::endl;
 	}
 }
+
+void Magasin::statusCommande(int idCommande)
+{
+	for (auto& commande : commande_) {
+		if (commande.getId() == idCommande) {
+			commande.setlivraison(true);
+		}
+		std::cout << "Commande #" << idCommande << " non trouvée." << std::endl;
+	}
+}

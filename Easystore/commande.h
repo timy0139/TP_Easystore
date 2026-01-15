@@ -14,6 +14,7 @@ public:
 	const Client& getClient() const;
 	const std::vector<Product> getCommande() const;
 	bool getLivraison() const ;
+	void setlivraison(bool livraison);
 
 	friend std::ostream& operator<<(std::ostream& os, const Commande& commande);
 };

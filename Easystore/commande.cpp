@@ -25,6 +25,12 @@ bool Commande::getLivraison() const
 	return livraison_;
 }
 
+void Commande::setlivraison(bool livraison)
+{
+	livraison_ = livraison;
+
+}
+
 std::ostream& operator<<(std::ostream& os, const Commande& commande)
 {
 	os << "=== Commande #" << commande.id_ << "\n"

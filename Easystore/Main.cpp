@@ -58,5 +58,6 @@ int main() {
 	Commande commande1(1, client2, client2.getPanier());
 	std::cout << commande1 << std::endl;
 	easyStore.validerCommande(2, 1);
+	easyStore.statusCommande(1);
 	std::cout << commande1 << std::endl;
 }
