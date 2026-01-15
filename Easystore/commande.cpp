@@ -1,6 +1,6 @@
 #include "commande.h"
 
-Commande::Commande(int id, const Client& client, const std::vector<Product>& commande, bool livraison)
+Commande::Commande(int id, const Client& client, const std::vector<Product>& commande)
 	: id_(id) , client_(client), commande_(commande), livraison_(false)
 {
 }

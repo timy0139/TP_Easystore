@@ -121,3 +121,16 @@ void Magasin::modifierQuantiterProduitPanier(int idClient, const std::string& no
 		std::cout << "Client avec ID" << idClient << "nom trouvé" << std::endl;
 	}
 }
+
+void Magasin::validerCommande(int idClient, int idCommande)
+{
+	Client* client = trouverClientParId(idClient);
+	if (client) {
+		Commande commande(idCommande, *client, client->getPanier());
+		commande_.push_back(commande);
+		client->viderPanier();
+	}
+	else {
+		std::cout << "Client avec ID" << idClient << "nom trouvé" << std::endl;
+	}
+}

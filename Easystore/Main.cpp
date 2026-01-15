@@ -55,6 +55,8 @@ int main() {
 	easyStore.trouverClientParId(2);
 
 	//question 6
-	Commande commande1(1, client1, client1.getPanier(), false);
+	Commande commande1(1, client2, client2.getPanier());
+	std::cout << commande1 << std::endl;
+	easyStore.validerCommande(2, 1);
 	std::cout << commande1 << std::endl;
 }

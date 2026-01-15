@@ -132,8 +132,6 @@
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="commande.h" />
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Header5.h" />
     <ClInclude Include="Magasin.h" />
     <ClInclude Include="Product.h" />
   </ItemGroup>

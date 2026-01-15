@@ -8,7 +8,7 @@ private:
 	std::vector<Product> commande_;
 	bool livraison_;
 public:
-	Commande(int  id, const Client& client, const std::vector<Product>& commande, bool livraison);
+	Commande(int  id, const Client& client, const std::vector<Product>& commande);
 
 	int getId() const;
 	const Client& getClient() const;
